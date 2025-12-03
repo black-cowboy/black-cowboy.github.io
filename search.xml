@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>C语言</title>
+    <url>/2024/01/25/C%E8%AF%AD%E8%A8%80/</url>
+    <content><![CDATA[<h2 id="1-C语言小游戏"><a href="#1-C语言小游戏" class="headerlink" title="1.C语言小游戏"></a>1.C语言小游戏</h2><p>大量好玩的C语言程序，训练编程思维，培养解决问题的思路，领略多姿多彩的 C 语言！包括C语言迷宫、24点游戏、奔跑的火柴人、超市管理系统、打字母、电子时钟、对对碰、俄罗斯方块、黑白棋、华容道、火车票订票管理源码、连连看、商品销售系统、象棋、超级玛丽、图书管理系统、学生成绩管理系统…….</p>
+<p>下载源码地址： <a href="https://pan.baidu.com/s/1Oe9IUqHlQM-Zj_HhxEHH2Q?pwd=6jm2">https://pan.baidu.com/s/1Oe9IUqHlQM-Zj_HhxEHH2Q?pwd=6jm2</a></p>
+<h2 id="2-The-Algorithms-C"><a href="#2-The-Algorithms-C" class="headerlink" title="2.The Algorithms - C"></a>2.The Algorithms - C</h2><p>C语言实现各种算法，同时也可以学习下算法！<br>项目地址:<a href="https://github.com/TheAlgorithms/C#the-algorithms---c--mainpage">https://github.com/TheAlgorithms/C#the-algorithms---c--mainpage</a></p>
+]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>c语言</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/2024/02/11/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre><code class="bash">$ hexo new &quot;My New Post&quot;
+</code></pre>
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre><code class="bash">$ hexo server
+</code></pre>
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre><code class="bash">$ hexo generate
+</code></pre>
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre><code class="bash">$ hexo deploy
+</code></pre>
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>JavaScript面试系列</title>
+    <url>/2024/02/03/javascript/</url>
+    <content><![CDATA[<h1 id="JavaScript面试系列-JavaScript中定义一个变量，没有赋值时，默认为undefined"><a href="#JavaScript面试系列-JavaScript中定义一个变量，没有赋值时，默认为undefined" class="headerlink" title="JavaScript面试系列_JavaScript中定义一个变量，没有赋值时，默认为undefined"></a>JavaScript面试系列_JavaScript中定义一个变量，没有赋值时，默认为undefined</h1><p>一、   看下列代码输出为何？解释原因。</p>
+<p>a)   原题：</p>
+<blockquote>
+<ol>
+<li>var a;  &#x2F;&#x2F;<a href="https://so.csdn.net/so/search?q=JavaScript&spm=1001.2101.3001.7020">JavaScript</a>中定义一个变量，没有赋值时，默认为undefined</li>
+<li>alert(typeof a); &#x2F;&#x2F; undefined</li>
+<li>alert(b); &#x2F;&#x2F; 报错，因为b没有定义。所有，在浏览器的控制台中会报 b is not defined</li>
+</ol>
+</blockquote>
+<span id="more"></span>
+<blockquote>
+<p>解读：这个题的考察点就是：JavaScript中定义一个变量（var a;），没有赋值时，默认为undefined；不定义变量(变量b)时没法读取变量的值。</p>
+</blockquote>
+<p>b)   把上代码的进行变化(把第一行和第二行调换一下)：</p>
+<blockquote>
+<ol>
+<li>alert(typeof a); &#x2F;&#x2F; undefined</li>
+<li>var a;  &#x2F;&#x2F;JavaScript中定义（声明）一个变量，会做变量的声明提升。即上面这句话会提升到最上面，当然没有赋值时，默认为undefined</li>
+<li>alert(b); &#x2F;&#x2F; 报错，因为b没有定义。所以，在浏览器的控制台中会报 b is not defined</li>
+</ol>
+</blockquote>
+<p>解读：我们发现把原题中的第一行和第二行代码调换位置后，结果一样，这就是JavaScript中变量声明提升：JavaScript中定义（声明）一个变量，会做变量的声明提升（只对声明提升，而不提升赋值），即这三行代码经过预编译后，依然和原题的代码一样，当然，针对变量声明提升，后面还有几个面试题会给大家详解。</p>
+]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>JavaScript</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>云计算</title>
+    <url>/2024/01/26/%E4%BA%91%E8%AE%A1%E7%AE%97/</url>
+    <content><![CDATA[<h2 id="终于有人把云计算、大数据和人工智能讲明白了！"><a href="#终于有人把云计算、大数据和人工智能讲明白了！" class="headerlink" title="终于有人把云计算、大数据和人工智能讲明白了！"></a>终于有人把云计算、大数据和人工智能讲明白了！</h2><p>今天跟大家讲讲云计算、大数据和人工智能。为什么讲这三个东西呢？因为这三个东西现在非常火，并且它们之间好像互相有关系：一般谈云计算的时候会提到大数据、谈人工智能的时候会提大数据、谈人工智能的时候会提云计算……感觉三者之间相辅相成又不可分割。但如果是非技术的人员，就可能比较难理解这三者之间的相互关系，所以有必要解释一下。<br>参考文章：<a href="https://zhuanlan.zhihu.com/p/35996270">https://zhuanlan.zhihu.com/p/35996270</a></p>
+]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>云计算</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>英语四六级</title>
+    <url>/2024/01/26/%E8%8B%B1%E8%AF%AD%E5%9B%9B%E5%85%AD%E7%BA%A7/</url>
+    <content><![CDATA[<h2 id="英语在线学习网站"><a href="#英语在线学习网站" class="headerlink" title="英语在线学习网站"></a>英语在线学习网站</h2><p>沪江题库是沪江英语旗下的一个题库网站。沪江英语声称是中国领先的教育科技公司，通过经营综合性互联网教育平台向广大用户提供者覆盖种类多元化，具备高度互动特质的优秀互联网教育产品及服务，并以此展示了先进的互联网技术和对教育行业的透彻理解。</p>
+<p>他的分类也很清晰。分为零基础，听力，口语，阅读，娱乐,英语4级，留学，考试英语，商务英语，新概念等。同样的，他网站里面还有一个宝藏区&#x2F;英语学习推荐页面。这里包含了。英语四六级成绩查询答案查看以及报名考研成绩查询，考研真题，考研作文，考研国家线，考研冲刺英语专四专八等等考试。在娱乐英语分类里面还有英文歌曲，电影世界美剧，英剧，迪士尼动画等等。相比之前的网站来说，沪江英语的资源还是非常多的。</p>
+<p><img src="https://pic1.zhimg.com/v2-78c95038b34842d1401e20b1ca797aca_r.jpg?source=1def8aca"><br>网站链接:<a href="https://tiku.hujiang.com/">https://tiku.hujiang.com/</a></p>
+]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>英语</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>虚拟语气</title>
+    <url>/2024/01/28/%E8%99%9A%E6%8B%9F%E8%AF%AD%E6%B0%94/</url>
+    <content><![CDATA[<h1 id="虚拟语气"><a href="#虚拟语气" class="headerlink" title="虚拟语气"></a>虚拟语气</h1><ol>
+<li>语气的分类</li>
+<li>虚拟语气在&#x3D;&#x3D;条件句&#x3D;&#x3D;中的用法</li>
+<li>虚拟语气在&#x3D;&#x3D;名词性从句&#x3D;&#x3D;、&#x3D;&#x3D;定语从句&#x3D;&#x3D;和&#x3D;&#x3D;状语从句&#x3D;&#x3D;中的运用</li>
+<li>虚拟语气的其他用法<span id="more"></span></li>
+</ol>
+<h4 id="1-语气的分类"><a href="#1-语气的分类" class="headerlink" title="1.语气的分类"></a>1.语气的分类</h4><p>语气和时态，语态一样，是谓语动词的一种形式，表明说话者的<strong>目的和意图</strong>，英语中有四种语气：<strong>陈述语气</strong>，<strong>疑问语气</strong>，<strong>祈使语气</strong>，<strong>虚拟语气</strong>。</p>
+<p>陈述语气：<strong>用来陈述事实或提出想法</strong>，包括肯定，否定</p>
+<p>疑问语气：用于提出问题</p>
+<p>祈使语气：<strong>用来向对方提出请求</strong>，<strong>给予忠告</strong>，<strong>指示</strong>，<strong>警告</strong>，<strong>发出命令</strong>等</p>
+<p><em>Come in and take a seat.</em></p>
+<p><em>Don’t be afraid to ask for help when you need it.</em></p>
+<p>虚拟语气：指<strong>说话者表示一种主观愿望或者假设</strong>的情况</p>
+<p>if i were you ,i would forgive Mary.</p>
+<p>Looking back on it ,i wish i hadn’t <strong>given in</strong>(屈服) so easily.</p>
+<p>(<strong>give in</strong> 表示被迫放弃，屈服，give up 表示主动放弃)。</p>
+<p>if only you could understand me !</p>
+<h4 id="2-虚拟语气在条件句中的用法"><a href="#2-虚拟语气在条件句中的用法" class="headerlink" title="2.虚拟语气在条件句中的用法"></a>2.虚拟语气在条件句中的用法</h4><p>条件句分为<strong>真实条件句</strong>和<strong>虚拟条件句</strong></p>
+<p><strong>真实条件句</strong>：可能实现的条件句叫真实条件句，这种条件句<strong>实现的可能性非常大</strong>，在条件句中从句<strong>常用一般现在时表将来</strong>，遵循<strong>主将从现</strong>的原则。</p>
+<p>if i <u>have</u> time ,i <u>will</u> come over to see you.</p>
+<p>if we <u>leave</u> now ,we <u>can</u> still catch the bus.</p>
+<p><strong>虚拟条件句</strong>：虚拟条件句则<strong>表示不能实现的或纯假想</strong>的情况，<strong>其谓语动词用虚拟语气</strong>。</p>
+<table>
+<thead>
+<tr>
+<th>对现实的假设</th>
+<th>条件从句中谓语动词的形式</th>
+<th>主句中谓语动词的形式</th>
+<th>例句</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>与现在事实相反</td>
+<td>&#x3D;&#x3D;过去式（be 用were）&#x3D;&#x3D;</td>
+<td>would&#x2F;could&#x2F;should&#x2F;might +动词原形</td>
+<td>if there <u>were</u> no music,the world <u>would be</u> very dull(乏味).</td>
+</tr>
+<tr>
+<td>与过去事实相反</td>
+<td>&#x3D;&#x3D;had +过去分词&#x3D;&#x3D;</td>
+<td>would&#x2F;could&#x2F;should&#x2F;might +have +过去分词</td>
+<td>if you <u>had taken</u> my advice,you <u>wouldn’t have failed</u>.</td>
+</tr>
+<tr>
+<td>与将来事实相反</td>
+<td>&#x3D;&#x3D;1. <u>过去式（be用were)</u>&#x3D;&#x3D;                                           &#x3D;&#x3D;2. <u>should +动词原形</u>&#x3D;&#x3D;                                               &#x3D;&#x3D;3. <u>were to  +动词原形</u>&#x3D;&#x3D;</td>
+<td>would&#x2F;could&#x2F;should&#x2F;might +动词原形</td>
+<td>if she <u>shouldn’t come</u> tomorrow ,we <u>would put off</u> the meeting.</td>
+</tr>
+</tbody></table>
+<p>小测试：</p>
+<p>if  i ____________(be) you,i wouldn’t buy the house right now.</p>
+<p>if he ____________(catch) the morning,train,he wouldn’t have been late for the meeting.</p>
+<p>（文末附答案）</p>
+<p>错综时间条件句也称混合虚拟语气，含蓄虚拟语气，虚拟语气的倒装</p>
+<p>虚拟语气在条件句中的其它用法，有兴趣可以自己去了解，本文不做详细介绍</p>
+<blockquote>
+<p>温馨提示</p>
+<ol>
+<li>在虚拟语气中，&#x3D;&#x3D;be的形式各人称都用were&#x3D;&#x3D;。</li>
+</ol>
+<p>​        if it <u>were</u> to rain, the game would be put off .如果下雨的话，比赛将会推迟</p>
+<ol start="2">
+<li><p>&#x3D;&#x3D;if it were not&#x2F;had not been for …&#x3D;&#x3D;&#x3D;were it not &#x2F;had it not been for…，用于虚拟语气意为“要不是·····”</p>
+<p><u>if it were not for</u> peace,we could not be living a happy life today.&#x3D;<u>were it not for</u> peace,we could not be living a happy life today.要不是有了和平，我们今天就不可能过着幸福的生活。</p>
+<p><u>if it had not been for</u> your timely help, i would have gone bankrupt.&#x3D;<u>had it not been for</u> your timely help, i would have gone bankrupt.要不是你的及时帮助，我就破产了。</p>
+</li>
+</ol>
+</blockquote>
+<h4 id="3-虚拟语气在名词性从句、定语从句和状语从句中的运用"><a href="#3-虚拟语气在名词性从句、定语从句和状语从句中的运用" class="headerlink" title="3.虚拟语气在名词性从句、定语从句和状语从句中的运用"></a>3.虚拟语气在名词性从句、定语从句和状语从句中的运用</h4><p>1.虚拟语句在<strong>主语从句</strong>中的运用</p>
+<p>在以下几个句型中，it是形式主语， that引导的是主语从句，从句谓语动词常用“should +动词原形”的虚拟语气形式</p>
+<table>
+<thead>
+<tr>
+<th>句型</th>
+<th>例句</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>&#x3D;&#x3D;it be adj. +that …&#x3D;&#x3D;常见的形容词有：important，necessary，essential，strange，surprising，等should意为“应该，竟然”</td>
+<td>it is <u>necessary</u>  that you should seize every possible chance.你应该抓住每一次可能的机会是必要的。                                                                                                         it is <u>surprising</u> that you should not understand me!你竟然不理解我，真实令人吃惊！</td>
+</tr>
+<tr>
+<td>&#x3D;&#x3D;it be + n. +that…&#x3D;&#x3D;常见的名词有：pity，shame,surprise,wonder等</td>
+<td>it was a surprise that he (should)come so early.真奇怪他竟然来的如此早。it is a pity  that you (should) have to leave.真遗憾你非走不可。</td>
+</tr>
+<tr>
+<td>&#x3D;&#x3D;it be +过去分词+that…&#x3D;&#x3D;常见的过去分词有suggested，required，ordered，proposed</td>
+<td>it is suggested that parents(should) spend more time with their children.人们建议父母和孩子共同度过更多时光。</td>
+</tr>
+</tbody></table>
+<p>2.虚拟语气在<strong>宾语从句</strong>中的应用</p>
+<p>（1）wish 后的宾语从句中虚拟语气的用法：</p>
+<table>
+<thead>
+<tr>
+<th>主句表达的愿望</th>
+<th>宾语从句中谓语动词的形式</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>表示与现在事实相反的愿望</td>
+<td>过去式（be用were）</td>
+</tr>
+<tr>
+<td>表示与过去事实相反的愿望</td>
+<td>had + done</td>
+</tr>
+<tr>
+<td>表示与将来事实相反的愿望</td>
+<td>would&#x2F;could + do</td>
+</tr>
+</tbody></table>
+<p>i wish i <u>were</u> ten years younger.但愿我能年轻10岁(对现在的虚拟) </p>
+<p>i wish you <u>had come</u> to the lecture.但愿你当时来听讲座了（对过去的虚拟）</p>
+<p>i wish i <u>could fly</u> to the moon some day.如果有一天我能飞到天上去就好了（对未来的虚拟）</p>
+<p>（2）would rather 后的宾语从句中虚拟语气的用法：</p>
+<table>
+<thead>
+<tr>
+<th>条件</th>
+<th>从句中谓语动词的形式</th>
+<th>例句</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>对现在或将来的虚拟</td>
+<td>过去式(be用were)</td>
+<td>Don’t make  a noise. I’d rather you kept silent.别出声，我宁愿你保持沉默。</td>
+</tr>
+<tr>
+<td>对过去的虚拟</td>
+<td>had +done</td>
+<td>He’d rather his father had been at his party last night.他宁愿他的父亲昨晚参加了他的聚会。</td>
+</tr>
+</tbody></table>
+<p>（3）&#x3D;&#x3D;表示“建议、命令、要求”等动词后的宾语从句中的谓语动词常用（should+)do 虚拟结构&#x3D;&#x3D;</p>
+<p>巧计：</p>
+<p>一个坚持：&#x3D;&#x3D;insist&#x3D;&#x3D;</p>
+<p>两个命令：&#x3D;&#x3D;order，command&#x3D;&#x3D;</p>
+<p>三个建议：&#x3D;&#x3D;suggest,recommend,advise&#x3D;&#x3D;</p>
+<p>四个要求：&#x3D;&#x3D;demand,require,request,desire&#x3D;&#x3D;</p>
+<p>i suggest  you <u>(should) have</u> enough sleep</p>
+<p>我建议你应有充足的睡眠。</p>
+<p>She requested that no one <u>(should) be</u> told of her decision.</p>
+<p>我要求不要告诉任何人她的决定。 </p>
+<blockquote>
+<p>1.&#x3D;&#x3D;与此类动词相关的主语从句、表语从句和同位语从句也需要用虚拟语气，即谓语动词用should +do&#x3D;&#x3D;</p>
+<p>2.&#x3D;&#x3D;其中“insist” 作“坚持说”，suggest作“暗示，表明”，recommend作“推荐”讲时，其后的从句不用虚拟语气。&#x3D;&#x3D;</p>
+</blockquote>
+<p>3.虚拟语气在<strong>表语从句中和同位语从句</strong>中的运用</p>
+<p>（1）&#x3D;&#x3D;在(suggestion,proposal,order,request,advise)表建议的表语从句和同位语从句中要用虚拟语气，结构式(should) do&#x3D;&#x3D;</p>
+<p>（2）&#x3D;&#x3D;<u>as if</u>&#x3D;&#x3D; 和&#x3D;&#x3D;<u>as though</u> 引导的表语从句有时也用虚拟语气。&#x3D;&#x3D;</p>
+<table>
+<thead>
+<tr>
+<th>对现实的假设</th>
+<th>表语从句中的谓语动词形式</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>与现在事实相反</td>
+<td>&#x3D;&#x3D;did were&#x3D;&#x3D;</td>
+</tr>
+<tr>
+<td>与过去事实相反</td>
+<td>&#x3D;&#x3D;had done&#x3D;&#x3D;</td>
+</tr>
+<tr>
+<td>与将来事实相反</td>
+<td>&#x3D;&#x3D;would&#x2F;might&#x2F;could +do&#x3D;&#x3D;</td>
+</tr>
+</tbody></table>
+<p><em>eg</em>：</p>
+<p>he treats me <u>as if</u> i <u>were</u> a stranger.他待我如陌生人。</p>
+<p>I’ve been working all day,but i feel <u>as if</u> i <u>had achieved</u> nothing.我整天一直工作，但我感觉好像一无所成。</p>
+<p>it seems <u>as if</u>  the meeting <u>would</u> never end.会议似乎永远不会结束。</p>
+<blockquote>
+<p>as if&#x2F;as though 也可以&#x3D;&#x3D;引导事实或很可能是事实的从句&#x3D;&#x3D;，&#x3D;&#x3D;常用在连系动词look，seem，taste，smell，sound等词后&#x3D;&#x3D;，这种情况&#x3D;&#x3D;不用虚拟语气&#x3D;&#x3D;。</p>
+<p>it looks <u>as if</u> <u>it is going to rain</u>.天看上去好像要下雨了</p>
+<p>it seems <u>as if</u> the boy <u>has  lost</u> his way.这个男孩好像迷路了。</p>
+</blockquote>
+<p>4.虚拟语气在<strong>定语从句</strong>中的运用</p>
+<p>这种从句常用在it is (about&#x2F;high) time (that)…句型中，谓语动词一般用<strong>过去式</strong>，或<strong>should do</strong>的结构</p>
+<p><u>it’s time that</u> the public should raise their awareness of using shared bikes reasonably.                                                                          公众该提高合理使用共享单车的意识了。</p>
+<p><u>it’s high time</u> that we should wake up and struggle for our dream. time and tide wait for no man!                                                         我们该醒醒为梦想奋斗了。时不我待。</p>
+<blockquote>
+<p>在该句型中，&#x3D;&#x3D;time前不加定冠词the&#x3D;&#x3D;，&#x3D;&#x3D;从句中should不可省略。&#x3D;&#x3D;</p>
+</blockquote>
+<p>5.虚拟语气在<strong>状语从句</strong>中的运用</p>
+<p>as if &#x2F;though 引导的方式状语从句所表达的内容如果<strong>与实际情况相反</strong>或<strong>发生的可能性不大</strong>，则从句中需要用虚拟语气，&#x3D;&#x3D;形式和as if&#x2F;though引导表语从句时一样。&#x3D;&#x3D;</p>
+<h4 id="4-虚拟语气的其他用法"><a href="#4-虚拟语气的其他用法" class="headerlink" title="4.虚拟语气的其他用法"></a>4.虚拟语气的其他用法</h4><table>
+<thead>
+<tr>
+<th>用法</th>
+<th>例句</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>表示祝愿may +主语+do+ 其他，有时也只用动词原形</td>
+<td><u>May</u> God <u>bless</u> you!愿上帝保佑你 !                                                                              Long <u>live</u> peace!和平万岁！</td>
+</tr>
+<tr>
+<td>if only 句型：&#x3D;&#x3D;if only 句型用虚拟语气表示“要是…就好了”&#x3D;&#x3D;                                                         &#x3D;&#x3D;用过去式表示事实相反，用had done表示与过去事实相反，&#x3D;&#x3D;&#x3D;&#x3D;would do 表示与将来事实相反，if only+句子可以与i wish互换&#x3D;&#x3D;</td>
+<td>if only i <u>had</u> a car, i could get out of this place.                                                          要是我有辆车，我就能离开这个地方了                                                                                                                              if only i <u>hadn’t lost</u> it!&#x3D;i wish i hadn’t lost it!                                                                我（过去）没有把它弄丢就好了！                                                                                                                          if only she <u>would listen</u> to me carefully.&#x3D;i wish she would listen to me carefully.                                                                                            但愿她能仔细听完讲话。</td>
+</tr>
+<tr>
+<td>表示“本打算做而未做成”&#x3D;&#x3D;hope,want,plan,mean,intend,expect&#x3D;&#x3D;,等动词的&#x3D;&#x3D;had done形式和过去式+to have done形式&#x3D;&#x3D;都表示&#x3D;&#x3D;过去未实现的希望，打算，意图&#x3D;&#x3D;</td>
+<td>i <u>had meant</u> to phone you,but i forget your phone number. &#x3D;i <u>meant to have phoned</u> you .but i forget your phone number.                                                                                             我本打算给你打电话，可我把你的电话号码忘记了</td>
+</tr>
+</tbody></table>
+<p>if  i <strong>were</strong>(be) you,i wouldn’t buy the house right now.</p>
+<p>if he <em><strong>had caught</strong></em>(catch) the morning,train,he wouldn’t have been late for the meeting.</p>
+]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>英语</tag>
+      </tags>
+  </entry>
+</search>
